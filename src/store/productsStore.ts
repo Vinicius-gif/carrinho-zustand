@@ -2,7 +2,7 @@
 // productsStore.ts
 
 
-import { Product } from '@/types/Product';
+import { Product } from '@/types/product';
 import {create} from 'zustand';
 
 interface ProductsStore {
