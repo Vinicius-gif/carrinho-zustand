@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import useProductsStore from '@/store/productsStore';
-import { Product } from '@/types/product';
+import { Product } from '@/types/Product';
 import formatCurrency from '@/utils/formatCurrency';
 import React from 'react';
 import { BsFillCartPlusFill } from 'react-icons/bs';
 
-const ProductCard = ({id, title, price, thumbnail}: Product) => {
+const ProductCard = ({id, title, price, thumbnail }: Product) => {
 
   const { addToCart } = useProductsStore();
 
