@@ -3,13 +3,8 @@ import useProductsStore from '@/store/productsStore';
 import formatCurrency from '@/utils/formatCurrency';
 import React from 'react';
 import { BsFillCartPlusFill } from 'react-icons/bs';
+import { Product } from '@/types/product';
 
-type Product = {
-  id: string;
-  title: string;
-  price: number;
-  thumbnail: string;
-}
 
 const ProductCard = ({id, title, price, thumbnail }: Product) => {
 
