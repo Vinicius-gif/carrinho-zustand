@@ -2,6 +2,7 @@
 
 import { getProducts } from '@/api/getProducts';
 import useProductsStore from '@/store/productsStore';
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import { BsSearch } from 'react-icons/bs';
 
@@ -9,13 +10,17 @@ const SearchBar = () => {
 
   const [ searchValue, setSearchValue ] = useState('');
   const { addNewProducts } = useProductsStore();
+  const router = useRouter();
 
   const handleSearch = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
+    
     const newProducts = await getProducts({query: searchValue});
-
+    
     addNewProducts(newProducts);
+    
+    router.push('/pesquisa');
     
     setSearchValue('');
   };
