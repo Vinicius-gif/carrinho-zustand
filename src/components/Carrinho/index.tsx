@@ -18,7 +18,7 @@ const Carrinho = () => {
 
   return (
     <section className={`w-full max-w-xs bg-white h-screen fixed top-0 right-0 px-5 pt-24 pb-5 flex flex-col
-    justify-between transition-all duration-200 ease-linear transform ${isCartVisible ? 'translate-x-0' : 'translate-x-full'}`}>
+    justify-between transition-all duration-200 ease-linear transform ${isCartVisible ? 'translate-x-0' : 'translate-x-full'} z-10`}>
       <div className="grow overflow-auto border-b-0 last:border-b-0">
         { cart.map((cartItem) => {
           const productProps = {
