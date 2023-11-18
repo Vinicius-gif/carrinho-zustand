@@ -1,5 +1,5 @@
 type Props = {
-  value:number | string;
+  value:number;
 }
 
 const formatCurrency = ({value}: Props) => {
