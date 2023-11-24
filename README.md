@@ -2,14 +2,9 @@
 
 Este é um projeto de um site de compras online. Ele me ajudou a aprimorar minhas habilidades de programação em React.js, Next.js, TypeScript e Tailwind por meio da prática constante.
 
-## Índice
+### Screenshot Desktop
 
-- [Visão geral](#visão-geral)
-  - [O Projeto](#o-projeto)
-  - [Screenshot Desktop](#screenshot-desktop)
-  - [Links](#links)
-- [Construído com](#construído-com)
-- [Autor](#autor)
+![Screenshot](public/desktop-print.png)
 
 ## Visão geral
 
@@ -39,10 +34,6 @@ Os usuários devem ser capazes de:
 - Jest - Testes
 - Responsividade
 - Eslint - identação do código
-
-### Screenshot Desktop
-
-![Screenshot](public/desktop-print.png)
 
 ## Autor
 
